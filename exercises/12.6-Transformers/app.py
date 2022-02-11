@@ -6,4 +6,7 @@ incoming_ajax_data = [
 	{ "name": 'Bobby', "last_name": 'Mc birth' }
 ]
 
-#Your code go here:
+def data_transformer(elements):
+	return list(map(lambda person: f"{person['name']} {person['last_name']}",  elements))
+
+print(data_transformer(incoming_ajax_data))

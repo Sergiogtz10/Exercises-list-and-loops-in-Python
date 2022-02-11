@@ -5,7 +5,9 @@ def sum_all_values(items):
 
     total= 0
     #The magic happens here:
+    for i in range(len(items)):
+        total += items[i]
    
-
     return total
+    
 print(sum_all_values(my_sample_list))

@@ -2,6 +2,10 @@ par = "Lorem ipsum dolor sit amet consectetur adipiscing elit Curabitur eget bib
 
 counts = {}
 #your code go here:
-
+for i in par:
+    if i != " ":
+        i = i.lower()
+        if i in counts:
+            counts[i] += 1
+        else:counts[i] = 1
 print(counts)
-

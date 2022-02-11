@@ -7,3 +7,7 @@ names = ['Liam','Emma','Noah','Olivia','William','Ava','James','Isabella','Logan
 
 
 #Your code go here:
+def filter_list_strings(persons):
+    return list(filter(lambda name: True if "am" in name.lower() else False, persons))
+
+print(filter_list_strings(names))
